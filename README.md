@@ -1,16 +1,11 @@
-# Spotify Accounts Authentication Examples
+# Receiptify
+Web application inspired by https://www.instagram.com/albumreceipts/. Generates receipts that list out a user's top tracks in the past month, 6 months, and all time.
 
-This project contains basic demos showing the different OAuth 2.0 flows for [authenticating against the Spotify Web API](https://developer.spotify.com/web-api/authorization-guide/).
+The application can be viewed at https://receiptify.herokuapp.com/.
 
-These examples cover:
+## Running the App Locally
 
-* Authorization Code flow
-* Client Credentials flow
-* Implicit Grant flow
-
-## Installation
-
-These examples run on Node.js. On [its website](http://www.nodejs.org/download/) you can find instructions on how to install it. You can also follow [this gist](https://gist.github.com/isaacs/579814) for a quick and easy way to install Node.js and npm.
+This app runs on Node.js. On [its website](http://www.nodejs.org/download/) you can find instructions on how to install it. You can also follow [this gist](https://gist.github.com/isaacs/579814) for a quick and easy way to install Node.js and npm.
 
 Once installed, clone the repository and install its dependencies running:
 
@@ -19,17 +14,16 @@ Once installed, clone the repository and install its dependencies running:
 ### Using your own credentials
 You will need to register your app and get your own credentials from the Spotify for Developers Dashboard.
 
-To do so, go to [your Spotify for Developers Dashboard](https://beta.developer.spotify.com/dashboard) and create your application. For the examples, we registered these Redirect URIs:
+To do so, go to [your Spotify for Developers Dashboard](https://beta.developer.spotify.com/dashboard) and create your application. In my own development process, I registered these Redirect URIs:
 
-* http://localhost:8888 (needed for the implicit grant flow)
-* http://localhost:8888/callback
+* http://localhost:3000 (needed for the implicit grant flow)
+* http://localhost:3000/callback
 
-Once you have created your app, replace the `client_id`, `redirect_uri` and `client_secret` in the examples with the ones you get from My Applications.
+Once you have created your app, load the `client_id`, `redirect_uri` and `client_secret` into a `config.js` file.
 
-## Running the examples
-In order to run the different examples, open the folder with the name of the flow you want to try out, and run its `app.js` file. For instance, to run the Authorization Code example do:
+In order to run the app, open the folder, and run its `app.js` file:
 
     $ cd authorization_code
     $ node app.js
 
-Then, open `http://localhost:8888` in a browser.
+Then, open `http://localhost:3000` in a browser.
