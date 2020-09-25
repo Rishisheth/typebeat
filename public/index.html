@@ -3,30 +3,29 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Receiptify</title>
+		<title>Typebeat</title>
 		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
 		<link rel="stylesheet" href="styles.css" />
 	</head>
+	
 	<body>
 		<div class="container">
 			<div id="login">
-				<h1>Receiptify</h1>
+				<h1>Typebeat</h1>
 				<h2>Spotify Top Track Generator</h2>
-				<a href="/login" class="login-btn">Log in with Spotify</a>
+				<a href="/login" class="login-btn">Generate your link</a>
 				<p class="info">
-					This website was inspired by the Instagram account <a href="https://www.instagram.com/albumreceipts/">@albumreceipts</a>!</p>
 				</p>
 				<p class="info">
-					Made by <a href="https://michellexliu.github.io/">Michelle Liu</a>.</p>
 				</p>
 			</div>
 			<div id="loggedin">
-				<h1>Receiptify</h1>
-				<h2>Spotify Top Track Generator</h2>
+				<h1>Typebeat</h1>
+				<h2>Visualize your spotify account</h2>
 				<div id="options">
-					<button class="btn" id="short-term">Last Month</button>
-					<button class="btn" id="medium-term">Last 6 Months</button>
-					<button class="btn" id="long-term">All Time</button>
+					<button class="btn first" id="short-term">Last Month</button>
+					<button class="btn first" id="medium-term">Last 6 Months</button>
+					<button class="btn first" id="long-term">All Time</button>
 				</div>
 				<div id="receipt"></div>
 			</div>
@@ -34,7 +33,7 @@
 		<script id="user-profile-template" type="text/x-handlebars-template">
 			<div class='receiptContainer'>
 				<h2 class='logo'>
-					RECEIPTIFY
+					Typebeat
 				</h2>
 				<p class='period'>
 					{{period}}
@@ -107,7 +106,7 @@
 					</p>
 					<img src='barcode.png' />
 					<p class="website">
-						receiptify.herokuapp.com
+						Typebeat.herokuapp.com
 					</p>
 				</div>
 			</div>
