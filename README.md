@@ -1,3 +1,5 @@
 # Typebeat
-Visualize and share your spotify page.
+Generate your spotify landing page.
+
+In progress
 
