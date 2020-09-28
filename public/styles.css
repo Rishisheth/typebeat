@@ -67,9 +67,9 @@ p {
     -moz-appearance: none;
     appearance: none;
     background-color: transparent;
-    border: 2px solid #1db954;
-    border-radius: 0.6em;
-    color: #1db954;
+    border: 11px solid black;
+    border-radius: .1em;
+    color: black;
     cursor: pointer;
     display: -webkit-box;
     display: -webkit-flex;
@@ -78,7 +78,7 @@ p {
     -webkit-align-self: center;
     -ms-flex-item-align: center;
     align-self: center;
-    font-size: 1rem;
+    font-size: 3rem;
     font-weight: 400;
     line-height: 1;
     margin: 20px;
@@ -92,7 +92,7 @@ p {
 
 .btn:hover,
 .btn:focus {
-    color: black;
+    color: white;
     outline: 0;
 }
 .first {
@@ -101,7 +101,7 @@ p {
 }
 
 .first:hover {
-    box-shadow: 0 0 40px 40px #1db954 inset;
+    box-shadow: 0 0 120px 120px black inset;
 }
 .login-btn:hover {
 	text-decoration: none;
